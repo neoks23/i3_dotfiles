@@ -112,6 +112,9 @@ bindsym $mod+Shift+s layout stacking
 bindsym $mod+Shift+w layout tabbed
 bindsym $mod+e layout toggle split
 
+# pavucontrol
+bindsym $mod+a exec pavucontrol
+
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 
@@ -119,7 +122,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+bindsym $mod+Shift+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -176,16 +179,16 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym h resize grow width 10 px or 10 ppt
-        bindsym j resize grow height 10 px or 10 ppt
-        bindsym k resize shrink height 10 px or 10 ppt
-        bindsym l resize shrink width 10 px or 10 ppt
+        bindsym h resize grow width 50 px
+        bindsym j resize grow height 50 px 
+        bindsym k resize shrink height 50 px 
+        bindsym l resize shrink width 50 px 
 
         # same bindings, but for the arrow keys
-        bindsym Left resize grow width 10 px or 10 ppt
-        bindsym Down resize shrink height 10 px or 10 ppt
-        bindsym Up resize grow height 10 px or 10 ppt
-        bindsym Right resize shrink width 10 px or 10 ppt
+        bindsym Left resize grow width 50 px
+        bindsym Down resize shrink height 50 px
+        bindsym Up resize grow height 50 px
+        bindsym Right resize shrink width 50 px
 
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
